@@ -1,6 +1,9 @@
-@use "./particle/base-style";
-@use "./particle/variable";
-@use "./particle/header";
-@use "./particle/main-first-half";
-@use "./particle/main-second-half";
-@use "./particle/footer";
+@use "./partials/setup";
+@use "./partials/base-style";
+@use "./partials/variable";
+@use "./partials/header";
+@use "./partials/main-first-half";
+@use "./partials/main-second-half";
+@use "./partials/footer";
+@use "./partials/blog-page";
+@use "./partials/contact-page";

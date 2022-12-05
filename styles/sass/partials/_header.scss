@@ -1,0 +1,39 @@
+@use"./variable";
+// header
+header{
+    background: url(././captured-final-assets/header-image.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .image-container{
+        width: 50%;
+        box-shadow: -10px -1px 0px 33px #FDFA69;
+    -webkit-box-shadow: -10px -1px 0px 33px #FDFA69;
+    -moz-box-shadow: -10px -1px 0px 33px #FDFA69;
+    }
+}
+// header ends
+// nav
+nav{
+    width: 50%;
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        font-size: 1.1rem;
+        letter-spacing: 1.1px;
+        text-align: center;
+        line-height: 29px;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+}
+// nav ends
