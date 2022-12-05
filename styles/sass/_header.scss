@@ -1,0 +1,53 @@
+// header
+header{
+    background: url(././captured-final-assets/header-image.jpg);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        height: 100vh;
+        justify-content: start
+        
+    }
+    .image-container{
+        
+        box-shadow: -10px -1px 0px 33px $first-color;
+        -webkit-box-shadow: -10px -1px 0px 33px $first-color;
+        -moz-box-shadow: -10px -1px 0px 33px $first-color;
+        position: absolute;
+        bottom: 0;
+    }
+    h1{
+        font-size: 8rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        right: 25%;
+    }
+}
+// header ends
+// nav
+nav{
+    width: 45%;
+    z-index: 10;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        font-size: 1.1rem;
+        letter-spacing: 1.1px;
+        text-align: center;
+        line-height: 29px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:$third-color;
+    }
+}
+// nav ends

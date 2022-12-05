@@ -1,9 +1,5 @@
-@use "./partials/setup";
-@use "./partials/base-style";
-@use "./partials/variable";
-@use "./partials/header";
-@use "./partials/main-first-half";
-@use "./partials/main-second-half";
-@use "./partials/footer";
-@use "./partials/blog-page";
-@use "./partials/contact-page";
+@import"setup";
+@import"variable";
+@import"base-style";
+@import"header";
+
