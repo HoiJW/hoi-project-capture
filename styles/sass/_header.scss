@@ -1,7 +1,7 @@
 // header
 header{
     background: url(././captured-final-assets/header-image.jpg);
-    background-size: 100% 90%;
+    background-size: cover;
     background-repeat: no-repeat;
     .wrapper{
         display: flex;
@@ -18,13 +18,13 @@ header{
         -webkit-box-shadow: -10px -1px 0px 33px $first-color;
         -moz-box-shadow: -10px -1px 0px 33px $first-color;
         position: absolute;
-        bottom: 0;
+        bottom: -15%;
     }
     h1{
         font-size: 8rem;
         text-transform: uppercase;
         position: absolute;
-        top: 50%;
+        top: 55%;
         right: 25%;
     }
 }

@@ -1,0 +1,93 @@
+// about style
+.about{
+    background-color: $fifth-color;
+    height: 80vh;
+    padding: 15%;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    button{
+        text-align: center;
+        line-height: 29px;
+        letter-spacing: 1px;
+        width: 15%;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        background-color: $second-color;
+        border: 1px solid $second-color;
+        margin-top: 1%;
+    }
+}
+// about ends
+// blog style
+.blog{
+    background-color: $forth-color;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
+    .imagine-contanier,
+    .text-container{
+        width: 40%;
+    }
+    .text-container{
+        padding-left: 7%;
+        h2{
+            font-size: 2.3rem;
+            text-transform: uppercase;
+        }
+            button{
+                text-align: center;
+                line-height: 29px;
+                letter-spacing: 1px;
+                width: 150px;
+                text-transform: uppercase;
+                font-family: 'Playfair Display', serif;
+                background-color: $second-color;
+                border: 1px solid $second-color;
+                margin-top: 1%;
+                padding: 1%;
+            }
+
+    }/* text wrapper */
+    .box1{
+        box-shadow: 26px 24px 0px 0px $first-color;
+        -webkit-box-shadow: 26px 24px 0px 0px $first-color;
+        -moz-box-shadow: 26px 24px 0px 0px $first-color;
+        position: absolute;
+        top: -3%;
+    }
+
+    .box2{
+        position: absolute;
+        right: 0;
+        padding: 0;
+        top: 5%;
+    }
+    .box3{
+        box-shadow: -24px 26px 0px 0px $first-color;
+        -webkit-box-shadow: -24px 26px 0px 0px $first-color;
+        -moz-box-shadow: -24px 26px 0px 0px $first-color;
+        bottom: -15%;
+        order: 1 ;
+        position: absolute;
+        right: 0;
+        bottom: -3%;
+    }
+    
+    .box4{
+        text-align: end;
+        padding-right: 7%;
+        position: absolute;
+        bottom: 10%;
+        padding: 0;
+    }
+}
+// blog style ends
