@@ -91,3 +91,44 @@
     }
 }
 // blog style ends
+
+//mid menu style
+.mid-menu{
+    background-color: $fifth-color;
+    height: 90vh;
+    padding-top: 10%;
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .menu-box{
+        display: flex;
+        flex-basis: 45%;
+        margin-left: 2%;
+        .icon{
+            margin-top: 2%;
+            margin-right: 2%;
+            background-color: $second-color;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $second-color;
+            border-radius: 50%;
+            i{
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        .text-container{
+            width: 80%;
+        }
+        h2{
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 32px;
+        }
+    }
+}
+//mid menu style ends

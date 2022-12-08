@@ -407,7 +407,7 @@ nav a {
           order: 1;
   position: absolute;
   right: 0;
-  bottom: -3%;
+  bottom: -15%;
 }
 .blog .box4 {
   text-align: end;
@@ -415,4 +415,53 @@ nav a {
   position: absolute;
   bottom: 10%;
   padding: 0;
+}
+
+.mid-menu {
+  background-color: #EFFDF3;
+  height: 90vh;
+  padding-top: 10%;
+}
+.mid-menu .wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mid-menu .menu-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-left: 2%;
+}
+.mid-menu .menu-box .icon {
+  margin-top: 2%;
+  margin-right: 2%;
+  background-color: #4ceea7;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #4ceea7;
+  border-radius: 50%;
+}
+.mid-menu .menu-box .icon i {
+  font-size: 2rem;
+  text-align: center;
+}
+.mid-menu .menu-box .text-container {
+  width: 80%;
+}
+.mid-menu .menu-box h2 {
+  text-transform: uppercase;
+}
+.mid-menu .menu-box p {
+  line-height: 32px;
 }
