@@ -648,11 +648,19 @@ input:checked ~ .menu-content {
     -webkit-box-shadow: 0px 15px 0px 0px #FDFA69;
     -moz-box-shadow: 0px 15px 0px 0px #FDFA69;
   }
+  .mid-menu .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .mid-menu .menu-box {
+    margin-bottom: 10px;
+  }
   .mid-menu h2 {
     font-size: 1.8rem;
   }
   .mid-menu p {
-    font-size: 1.1rem;
+    display: none;
   }
 }
 /* Landscape phones and down */

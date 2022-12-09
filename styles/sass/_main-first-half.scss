@@ -205,11 +205,17 @@
     }
 
     .mid-menu{
+        .wrapper{
+            justify-content: flex-start;
+        }
+        .menu-box{
+            margin-bottom:10px ;
+        }
         h2{
             font-size: 1.8rem;
         }
         p{
-            font-size: 1.1rem;
+            display: none;
         }
     }
 }
