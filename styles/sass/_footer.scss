@@ -1,3 +1,10 @@
 //footer style
-
+footer{
+    background-color: $third-color;
+    p{
+        color: $forth-color;
+        line-height: 0;
+        font-size: 1rem;
+    }
+}
 //footer style ends

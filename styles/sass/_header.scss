@@ -8,30 +8,30 @@ header{
         flex-direction: column;
         align-items: flex-end;
         position: relative;
-        height: 100vh;
+        height: 110vh;
         justify-content: start
         
     }
     .image-container{
-        
         box-shadow: -10px -1px 0px 33px $first-color;
         -webkit-box-shadow: -10px -1px 0px 33px $first-color;
         -moz-box-shadow: -10px -1px 0px 33px $first-color;
         position: absolute;
         bottom: -15%;
+        margin-left: 55%;
     }
     h1{
-        font-size: 8rem;
+        font-size: 10rem;
         text-transform: uppercase;
         position: absolute;
         top: 55%;
-        right: 25%;
+        left: 27%;
     }
 }
 // header ends
 // nav
 nav{
-    width: 45%;
+    width: 40%;
     z-index: 10;
     ul{
         display: flex;
@@ -41,7 +41,7 @@ nav{
         list-style: none;
     }
     a{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         letter-spacing: 1.1px;
         text-align: center;
         line-height: 29px;
