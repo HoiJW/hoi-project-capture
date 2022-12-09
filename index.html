@@ -13,14 +13,25 @@
 <body>
 	<header id="home">
 		<div class="wrapper">
-			<nav>
+			<nav><!-- desktop nav -->
 				<ul>
-					<li><a href="#home">home</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#blog">blog</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
+					
+				</ul><!-- desk nav ends -->
 			</nav>
+				<div class="collapsible-menu"><!-- moblie menu -->
+					<input type="checkbox" id="menu">
+					<label for="menu">Menu</label>
+					<i class="fa-regular fa-square-caret-down"></i>
+					<div class="menu-content">
+						<ul>
+							<li><a href="#home">home</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#blog">blog</a></li>
+							<li><a href="#contact">contact</a></li>
+						</ul>
+					</div>
+				</div><!-- moblie menu ends -->
+			</div>
 			<div class="image-container">
 				<img src="./styles/captured-final-assets/header-box-image.jpg" alt="camera lens">
 			</div>

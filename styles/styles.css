@@ -336,6 +336,63 @@ nav a {
   color: #2c2c2c;
 }
 
+.menu-content {
+  padding: 0 0 0 50px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.collapsible-menu {
+  background-color: #fafafa;
+  padding: 0px 30px;
+  border-bottom: 5px solid #FDFA69;
+  -webkit-box-shadow: 2px 2px 3px #2c2c2c;
+          box-shadow: 2px 2px 3px #2c2c2c;
+}
+.collapsible-menu label {
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+  padding: 5% 20%;
+}
+.collapsible-menu input#menu {
+  display: none;
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.collapsible-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Toggle Effect */
+input:checked ~ .menu-content {
+  max-height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (min-width: 940px) {
+  .drop-down-nav {
+    display: none;
+  }
+}
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  header .wrapper {
+    height: 75vh;
+  }
+  header nav {
+    display: none;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 .about {
   background-color: #EFFDF3;
   height: 80vh;

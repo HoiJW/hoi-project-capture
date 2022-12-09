@@ -61,4 +61,70 @@ nav{
     }
     
 }
+
+
 // nav ends
+
+//mobie nav style
+    .menu-content {
+        padding: 0 0 0 50px;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        }
+    .collapsible-menu {
+        background-color: $forth-color;
+        padding: 0px 30px;
+        border-bottom: 5px solid $first-color;
+        box-shadow: 2px 2px 3px $third-color;
+        label {
+            font-size: 2rem;
+            display: block;
+            cursor: pointer;
+            padding: 5% 20%;
+        }   
+        input#menu {
+            display: none;
+        }
+        ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        a {
+        display:block;
+        padding: 10px;
+        text-decoration: none;
+        }
+    }
+    
+    /* Toggle Effect */
+    input:checked ~ .menu-content {
+        max-height: 100%;
+        transition: 1s;
+    }
+        @media(min-width:940px){
+    .drop-down-nav{
+        display: none;
+    }
+}
+//moblie nav style ends
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    header{
+        .wrapper{
+            height: 75vh;
+        }
+        nav{
+            display: none;
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
