@@ -254,13 +254,11 @@ body {
   font-size: 125%;
 }
 
-button,
-i {
+button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-button:hover,
-i:hover {
+button:hover {
   scale: 1.1;
 }
 
@@ -294,6 +292,7 @@ header .image-container {
   bottom: -15%;
   margin-left: 55%;
   max-height: 640px;
+  right: 0;
 }
 header h1 {
   font-size: 10rem;
@@ -340,22 +339,29 @@ nav a {
   padding: 0 0 0 50px;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .collapsible-menu {
-  background-color: #fafafa;
-  padding: 0px 30px;
+  background-color: rgba(255, 255, 255, 0.568);
+  padding: 0px 15px;
   border-bottom: 5px solid #FDFA69;
   -webkit-box-shadow: 2px 2px 3px #2c2c2c;
           box-shadow: 2px 2px 3px #2c2c2c;
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  z-index: 10;
+  letter-spacing: 2px;
 }
 .collapsible-menu label {
-  font-size: 2rem;
+  font-size: 1.7rem;
   display: block;
   cursor: pointer;
-  padding: 5% 20%;
+  padding: 5% 5%;
+  opacity: 0.8;
+  text-align: center;
 }
 .collapsible-menu input#menu {
   display: none;
@@ -368,31 +374,73 @@ nav a {
   display: block;
   padding: 10px;
   text-decoration: none;
+  color: #2c2c2c;
+  text-transform: capitalize;
 }
 
 /* Toggle Effect */
 input:checked ~ .menu-content {
   max-height: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 @media (min-width: 940px) {
-  .drop-down-nav {
+  .collapsible-menu {
     display: none;
   }
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   header .wrapper {
-    height: 75vh;
+    height: 65vh;
   }
   header nav {
     display: none;
   }
+  header h1 {
+    font-size: 3.5rem;
+    left: 55%;
+    top: 13%;
+  }
+  header .image-container {
+    bottom: 35%;
+    height: auto;
+    width: 31%;
+    right: 0;
+    box-shadow: -10px -1px 0px 10px #FDFA69;
+    -webkit-box-shadow: -10px -1px 0px 10px #FDFA69;
+    -moz-box-shadow: -10px -1px 0px 10px #FDFA69;
+  }
 }
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header .wrapper {
+    height: 50vh;
+  }
+  header h1 {
+    left: 20%;
+    top: 30%;
+    font-size: 2.8rem;
+  }
+  header .image-container {
+    bottom: 58%;
+    width: 35%;
+    margin: 0;
+  }
+}
 /* Landscape phones and down */
+@media (max-width: 400px) {
+  header .wrapper {
+    height: 40vh;
+  }
+  header .image-container {
+    bottom: 65%;
+    width: 40%;
+    margin: 0;
+    box-shadow: -5px -1px 0px 5px #FDFA69;
+    -webkit-box-shadow: -5px -1px 0px 5px #FDFA69;
+    -moz-box-shadow: -5px -1px 0px 5px #FDFA69;
+  }
+}
 .about {
   background-color: #EFFDF3;
   height: 80vh;
@@ -443,12 +491,12 @@ input:checked ~ .menu-content {
 .blog .text-container {
   width: 40%;
 }
-.blog .text-container {
-  padding-left: 7%;
-}
-.blog .text-container h2 {
+.blog h2 {
   font-size: 2.3rem;
   text-transform: uppercase;
+}
+.blog .text-container {
+  padding-left: 7%;
 }
 .blog .text-container button {
   text-align: center;
@@ -480,9 +528,6 @@ input:checked ~ .menu-content {
   -webkit-box-shadow: -24px 26px 0px 0px #FDFA69;
   -moz-box-shadow: -24px 26px 0px 0px #FDFA69;
   bottom: -15%;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   position: absolute;
   right: 0;
   bottom: -15%;
@@ -515,6 +560,13 @@ input:checked ~ .menu-content {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   margin-left: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.mid-menu .menu-box:hover {
+  background-color: #fafafa;
+  border-radius: 15%;
+  scale: 0.9;
 }
 .mid-menu .menu-box .icon {
   margin-top: 2%;
@@ -548,6 +600,82 @@ input:checked ~ .menu-content {
   line-height: 32px;
 }
 
+@media (max-width: 940px) {
+  .about {
+    height: auto;
+    padding: 10%;
+  }
+  .about .wrapper h2 {
+    font-size: 2.2rem;
+  }
+  .blog {
+    height: auto;
+  }
+  .blog .box1,
+.blog .box2,
+.blog .box3,
+.blog .box4 {
+    position: static;
+    margin: 0 auto;
+  }
+  .blog .text-container {
+    text-align: center;
+  }
+  .mid-menu {
+    height: auto;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .about .wrapper h2 {
+    font-size: 2rem;
+  }
+  .blog {
+    height: auto;
+  }
+  .blog .box1,
+.blog .box2,
+.blog .box3,
+.blog .box4 {
+    position: static;
+    margin: 0 auto;
+    height: 25%;
+    width: 100%;
+  }
+  .blog .box1,
+.blog .box3 {
+    box-shadow: 0px 15px 0px 0px #FDFA69;
+    -webkit-box-shadow: 0px 15px 0px 0px #FDFA69;
+    -moz-box-shadow: 0px 15px 0px 0px #FDFA69;
+  }
+  .mid-menu h2 {
+    font-size: 1.8rem;
+  }
+  .mid-menu p {
+    font-size: 1.1rem;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 400px) {
+  .about .wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .about .wrapper p {
+    font-size: 1rem;
+  }
+  .blog .box2 h2,
+.blog .box4 h2 {
+    font-size: 1.5rem;
+  }
+  .blog .box2 p,
+.blog .box4 p {
+    font-size: 1.1rem;
+  }
+  .mid-menu .menu-box {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
 .bot-img {
   margin: 0;
   background-color: #EFFDF3;
@@ -641,6 +769,8 @@ input:checked ~ .menu-content {
   opacity: 1;
 }
 
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 footer {
   background-color: #2c2c2c;
 }

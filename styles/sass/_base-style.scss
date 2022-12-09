@@ -14,8 +14,8 @@ body{
     font-size: 125%;
 }
 
-button,
-i{transition: 0.3s;
+button
+{transition: 0.3s;
     &:hover{
         scale: 1.1;
     }
