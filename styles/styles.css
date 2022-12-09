@@ -298,8 +298,8 @@ header h1 {
   font-size: 10rem;
   text-transform: uppercase;
   position: absolute;
-  top: 53%;
-  left: 28%;
+  top: 62%;
+  left: 30%;
 }
 
 nav {
@@ -339,8 +339,6 @@ nav a {
   padding: 0 0 0 50px;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .collapsible-menu {
@@ -362,6 +360,12 @@ nav a {
   padding: 5% 5%;
   opacity: 0.8;
   text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-bottom: 1%;
+}
+.collapsible-menu label:hover, .collapsible-menu label:focus {
+  scale: 1.1;
 }
 .collapsible-menu input#menu {
   display: none;
@@ -393,12 +397,12 @@ input:checked ~ .menu-content {
   header .wrapper {
     height: 65vh;
   }
-  header nav {
+  header nav { /* moblie nav shows up */
     display: none;
   }
   header h1 {
     font-size: 3.5rem;
-    left: 55%;
+    left: 60%;
     top: 13%;
   }
   header .image-container {
@@ -410,6 +414,14 @@ input:checked ~ .menu-content {
     -webkit-box-shadow: -10px -1px 0px 10px #FDFA69;
     -moz-box-shadow: -10px -1px 0px 10px #FDFA69;
   }
+  header li {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-bottom: 1%;
+  }
+  header li:hover, header li:focus {
+    scale: 1.1;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -417,7 +429,7 @@ input:checked ~ .menu-content {
     height: 50vh;
   }
   header h1 {
-    left: 20%;
+    left: 30%;
     top: 30%;
     font-size: 2.8rem;
   }

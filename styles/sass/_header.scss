@@ -26,8 +26,8 @@ header{
         font-size: 10rem;
         text-transform: uppercase;
         position: absolute;
-        top: 53%;
-        left: 28%;
+        top: 62%;
+        left: 30%;
     }
 }
 // header ends
@@ -71,8 +71,6 @@ nav{
         padding: 0 0 0 50px;
         max-height: 0;
         overflow: hidden;
-        transition: 0.5s;
-        
     }
     .collapsible-menu {
         background-color: rgba(255, 255, 255, 0.568);
@@ -84,7 +82,6 @@ nav{
         right: 2%;
         z-index: 10;
         letter-spacing: 2px;
-        
         label {
             font-size: 1.7rem;
             display: block;
@@ -92,6 +89,12 @@ nav{
             padding: 5% 5%;
             opacity: 0.8;
             text-align: center;
+            transition: 0.5s;
+            padding-bottom: 1%;
+            &:hover,
+            &:focus{
+            scale: 1.1;
+            }
         }   
         input#menu {
             display: none;
@@ -126,12 +129,12 @@ nav{
         .wrapper{
             height: 65vh;
         }
-        nav{
+        nav{ /* moblie nav shows up */
             display: none;
         }
         h1{
             font-size: 3.5rem;
-            left: 55%;
+            left: 60%;
             top: 13%;
         }
         .image-container{
@@ -142,6 +145,14 @@ nav{
             box-shadow: -10px -1px 0px 10px $first-color;
             -webkit-box-shadow: -10px -1px 0px 10px $first-color;
             -moz-box-shadow: -10px -1px 0px 10px $first-color;
+        }
+        li{
+            transition: 0.5s;
+            padding-bottom: 1%;
+            &:hover,
+            &:focus{
+                scale: 1.1;
+                }
         }   
     }
 }
@@ -153,7 +164,7 @@ nav{
             height: 50vh;
         }
         h1{
-            left: 20%;
+            left: 30%;
             top: 30%;
             font-size: 2.8rem;
         }
