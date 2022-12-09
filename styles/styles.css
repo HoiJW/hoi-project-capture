@@ -443,8 +443,8 @@ input:checked ~ .menu-content {
 }
 .about {
   background-color: #EFFDF3;
-  height: 80vh;
-  padding: 15%;
+  height: 75vh;
+  padding: 12%;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -739,7 +739,7 @@ input:checked ~ .menu-content {
   scale: 1.1;
 }
 .gallery .wrapper .image-container .overlay {
-  height: 100%;
+  height: 99%;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -759,6 +759,7 @@ input:checked ~ .menu-content {
           align-items: center;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  text-align: center;
 }
 .gallery .wrapper .image-container .overlay p {
   font-size: 1.2rem;
@@ -769,6 +770,27 @@ input:checked ~ .menu-content {
   opacity: 1;
 }
 
+@media (max-width: 940px) {
+  .features {
+    height: auto;
+    padding-bottom: 3%;
+  }
+  .features .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .features .wrapper .text-container {
+    margin-top: 3%;
+  }
+  .features .wrapper .text-container p {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  .gallery .image-container,
+.gallery .overlay {
+    margin-bottom: 5%;
+  }
+}
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 footer {
