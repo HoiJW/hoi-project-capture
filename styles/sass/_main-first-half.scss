@@ -17,7 +17,8 @@
         text-align: center;
         line-height: 29px;
         letter-spacing: 1px;
-        width: 15%;
+        width: 200px;
+        height: 40px;
         text-transform: uppercase;
         font-family: 'Playfair Display', serif;
         background-color: $second-color;
@@ -89,6 +90,11 @@
         bottom: 10%;
         padding: 0;
     }
+
+    .box1,
+    .box3{
+        height: 419px;
+    }
 }
 // blog style ends
 
@@ -102,8 +108,8 @@
     }
     .menu-box{
         display: flex;
-        flex-basis: 45%;
-        margin-left: 2%;
+        flex-basis: 40%;
+        margin-left: 5%;
         .icon{
             margin-top: 2%;
             margin-right: 2%;

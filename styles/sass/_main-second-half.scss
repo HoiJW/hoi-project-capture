@@ -52,6 +52,37 @@
         width: 75%;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        .image-container{
+            transition: 1s;
+            position: relative;
+            &:hover{
+                scale: 1.1;
+                }
+            .overlay{
+                height: 100%;
+                width: 100%;
+                background: rgba(0,0,0, 0.6);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.8s;
+                p{
+                    font-size: 1.2rem;
+                    color: $forth-color;
+                    text-transform: capitalize;
+                }
+                &:hover{
+                    opacity: 1;
+                    }
+                
+            }
+        }
     }
 }
 //gallery style ends
