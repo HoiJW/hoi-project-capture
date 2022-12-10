@@ -4,6 +4,7 @@ header{
     background-image: url(./captured-final-assets/blog-header.jpg);
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
     .wrapper{
         height: 50%;
         align-items: center;
@@ -43,17 +44,17 @@ nav{
         text-transform: uppercase;
         text-decoration: none;
         color:$third-color;
-    }
-    
+    }    
 }
 //nav ends
 //main style
 main{
     background-color: $fifth-color;
-    .wrapper{
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
+        .first-half{
+            flex-wrap: wrap;
+            display: flex;
+
+        }
         .left-small{/* left section */
         flex-basis: 35%;
         display: flex;
@@ -102,8 +103,10 @@ main{
             width: 1em;
             margin-left: -1em;
           }
-    }/* left section ends */
-    .right-big{ /* rights section top*/
+    }
+    /* left section ends */
+    /* rights section top*/
+    .right-big{ 
         flex-basis: 55%;
         display: flex;
         flex-direction: column;
@@ -112,7 +115,6 @@ main{
         .yellow-container{
             display: flex;
             flex-direction: column;
-            height: 110vh;
         }
         
         .yellow-box,
@@ -152,72 +154,78 @@ main{
         p{
             line-height: 32px;
         }
-    }/* rights section top ends*/
-    .user-post{/* comment section */
-        margin-top: 5%;
-        display: flex;
-        flex-wrap: wrap;
-        .user-pic{
-            width: 92px;
-            height: 64px;
-        }
-        .comment-date,
-        .comment-text{
-            margin: 0;
-        }
-        .comment-text{
-            margin-top: 1%;
-        }
-        .user-comment{
-            width: 80%;
-            margin-left: 2%;
-            margin-bottom: 10%;
-            height: 100%;
-        }
-        p{
-            line-height: 32px;
-
-        }
     }
-    form{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        input{
-            width: 40%;
-            background: none;
-            border: none;
-            border-bottom: 3px solid $second-color;
-            padding: 2%;
-            margin: 0% 10% 5% 0%;
-            outline: none; 
-        }
-        textarea{
-            width: 90%;
-            background: none;
-            border:3px solid $second-color;
-            padding: 2%;
-            outline: none;
-            margin-bottom: 5%;
-            resize: none;
-            &::placeholder{
-                color: $third-color;
+    /* rights section top ends*/
+    // comment section style
+    .comments{
+        margin-left: 43%;
+        .user-post{/* comment section */
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            .user-pic{
+                width: 92px;
+                height: 64px;
+            }
+            .comment-date,
+            .comment-text{
+                margin: 0;
+            }
+            .comment-text{
+                margin-top: 1%;
+            }
+            .user-comment{
+                width: 80%;
+                margin-left: 2%;
+                margin-bottom: 10%;
+                height: 100%;
+            }
+            p{
+                line-height: 32px;
+    
             }
         }
-        button{
-            width: 90%;
-            margin-bottom: 8%;
-            text-align: center;
-            line-height: 29px;
-            letter-spacing: 1px;
-            height: 40px;
-            text-transform: uppercase;
-            font-family: 'Playfair Display', serif;
-            background-color: $second-color;
-            border: 1px solid $second-color;
-            margin-top: 1%;
+        form{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            input{
+                width: 40%;
+                background: none;
+                border: none;
+                border-bottom: 3px solid $second-color;
+                padding: 2%;
+                margin: 0% 10% 5% 0%;
+                outline: none; 
+            }
+            textarea{
+                width: 90%;
+                background: none;
+                border:3px solid $second-color;
+                padding: 2%;
+                outline: none;
+                margin-bottom: 5%;
+                resize: none;
+                &::placeholder{
+                    color: $third-color;
+                }
+            }
+            button{
+                width: 90%;
+                margin-bottom: 8%;
+                text-align: center;
+                line-height: 29px;
+                letter-spacing: 1px;
+                height: 40px;
+                text-transform: uppercase;
+                font-family: 'Playfair Display', serif;
+                background-color: $second-color;
+                border: 1px solid $second-color;
+                margin-top: 1%;
+            }
         }
     }
+//comment section ends
 }
 //main style ends
 //blog page style ends

@@ -266,6 +266,7 @@ header {
   background: url(././captured-final-assets/header-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 header .wrapper {
   display: -webkit-box;
@@ -275,9 +276,6 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   position: relative;
   height: 110vh;
   -webkit-box-pack: start;
@@ -303,9 +301,10 @@ header h1 {
 }
 
 nav {
-  width: 40%;
   z-index: 10;
   padding-top: 1%;
+  padding-left: 40%;
+  padding-right: 5%;
 }
 nav ul {
   display: -webkit-box;

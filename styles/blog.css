@@ -267,6 +267,7 @@ header {
   background-image: url(./captured-final-assets/blog-header.jpg);
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 header .wrapper {
   height: 50%;
@@ -316,14 +317,15 @@ nav a {
 main {
   background-color: #EFFDF3;
   /* left section ends */
+  /* rights section top*/
   /* rights section top ends*/
 }
-main .wrapper {
+main .first-half {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 main .left-small { /* left section */
   -ms-flex-preferred-size: 35%;
@@ -382,7 +384,7 @@ main .left-small ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-main .right-big { /* rights section top*/
+main .right-big {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
   display: -webkit-box;
@@ -403,7 +405,6 @@ main .right-big .yellow-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 110vh;
 }
 main .right-big .yellow-box,
 main .right-big .text-container {
@@ -442,7 +443,10 @@ main .right-big .post {
 main .right-big p {
   line-height: 32px;
 }
-main .user-post { /* comment section */
+main .comments {
+  margin-left: 43%;
+}
+main .comments .user-post { /* comment section */
   margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,27 +454,27 @@ main .user-post { /* comment section */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-main .user-post .user-pic {
+main .comments .user-post .user-pic {
   width: 92px;
   height: 64px;
 }
-main .user-post .comment-date,
-main .user-post .comment-text {
+main .comments .user-post .comment-date,
+main .comments .user-post .comment-text {
   margin: 0;
 }
-main .user-post .comment-text {
+main .comments .user-post .comment-text {
   margin-top: 1%;
 }
-main .user-post .user-comment {
+main .comments .user-post .user-comment {
   width: 80%;
   margin-left: 2%;
   margin-bottom: 10%;
   height: 100%;
 }
-main .user-post p {
+main .comments .user-post p {
   line-height: 32px;
 }
-main form {
+main .comments form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,7 +482,7 @@ main form {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-main form input {
+main .comments form input {
   width: 40%;
   background: none;
   border: none;
@@ -487,7 +491,7 @@ main form input {
   margin: 0% 10% 5% 0%;
   outline: none;
 }
-main form textarea {
+main .comments form textarea {
   width: 90%;
   background: none;
   border: 3px solid #4ceea7;
@@ -496,22 +500,22 @@ main form textarea {
   margin-bottom: 5%;
   resize: none;
 }
-main form textarea::-webkit-input-placeholder {
+main .comments form textarea::-webkit-input-placeholder {
   color: #2c2c2c;
 }
-main form textarea::-moz-placeholder {
+main .comments form textarea::-moz-placeholder {
   color: #2c2c2c;
 }
-main form textarea:-ms-input-placeholder {
+main .comments form textarea:-ms-input-placeholder {
   color: #2c2c2c;
 }
-main form textarea::-ms-input-placeholder {
+main .comments form textarea::-ms-input-placeholder {
   color: #2c2c2c;
 }
-main form textarea::placeholder {
+main .comments form textarea::placeholder {
   color: #2c2c2c;
 }
-main form button {
+main .comments form button {
   width: 90%;
   margin-bottom: 8%;
   text-align: center;

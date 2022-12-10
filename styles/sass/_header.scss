@@ -3,10 +3,10 @@ header{
     background: url(././captured-final-assets/header-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     .wrapper{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         position: relative;
         height: 110vh;
         justify-content: start
@@ -33,9 +33,10 @@ header{
 // header ends
 // nav
 nav{
-    width: 40%;
     z-index: 10;
     padding-top: 1%;
+    padding-left: 40%;
+    padding-right: 5%;
     ul{
         display: flex;
         justify-content: space-evenly;
