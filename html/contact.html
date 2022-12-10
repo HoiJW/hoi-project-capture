@@ -6,15 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../styles/contact.css">
 	<title>📸Captured</title>
+    <script src="https://kit.fontawesome.com/a334a3afe7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">home</a></li>
+                <li><a href="../index.html">home</a></li>
                 <li><a href="#about">about</a></li>
-                <li><a href="#blog">blog</a></li>
+                <li><a href="./blog.html">blog</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
@@ -22,8 +23,30 @@
     </header>
     <main>
         <div class="wrapper">
-            <div class="text-contanier"></div>
-            <form action=""></form>
+            <section class="info">
+                <div class="text-contanier">
+                    <div class="sns-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h2>info@email.com</h2>
+                    <p>123-456-7890
+                        123 Queen Street West, Unit 10
+                        Toronto, Ontario
+                        M5V2D5
+                    </p>
+                </div>
+            </section>
+            <section class="form-section">    
+                <form action="#" method="#" class="relpyForm" name="relpyForm">
+                    <input type="text" id="displayName" name="displayName" placeholder="Name">
+                    <input type="email" id="displayName" name="displayName" placeholder="Email address">
+                    <textarea name="userComment" id="comment" cols="30" rows="10" minlength="5" maxlength="400">Comment</textarea>
+                    <button>post comment</button>   
+                </form>
+            </section>
         </div><!-- wrapper ends -->
     </main>
     <footer>

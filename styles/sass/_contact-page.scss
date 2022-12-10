@@ -1,4 +1,101 @@
 // contact page style
+// header
+header{
+    background-image: url(./captured-final-assets/contact-header.jpg);
+    background-size: 100%;
+    height: 70vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+//header ends
+//nav starts
+nav{
+    z-index: 10;
+    padding-top: 1%;
+    padding-left: 40%;
+    padding-right: 5%;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li{
+        list-style: none;
+        transition: 0.3s;
+        padding-bottom: 1%;
+        &:hover,
+        &:focus{
+            scale: 1.1;
+            border-bottom: 3px solid $second-color;
+        }
+        
+    }
+    a{
+        font-size: 1.5rem;
+        letter-spacing: 1.1px;
+        text-align: center;
+        line-height: 29px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:$third-color;
+    }    
+}
+//nav ends
+//main style
+main{
+    background-color: $fifth-color;
+}
+//main style ends
+//form section style
+.form-section{
+    background-color: $forth-color;
+    position: relative;
+    flex-basis: 65%;
+    height: 100vh;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    position: absolute;
+    input{
+        width: 40%;
+        background: none;
+        border: none;
+        border-bottom: 3px solid $second-color;
+        padding: 2%;
+        margin: 0% 10% 5% 0%;
+        outline: none; 
+    }
+    textarea{
+        width: 90%;
+        background: none;
+        border:3px solid $second-color;
+        padding: 2%;
+        outline: none;
+        margin-bottom: 5%;
+        resize: none;
+        &::placeholder{
+            color: $third-color;
+        }
+    }
+    button{
+        width: 90%;
+        margin-bottom: 8%;
+        text-align: center;
+        line-height: 29px;
+        letter-spacing: 1px;
+        height: 40px;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        background-color: $second-color;
+        border: 1px solid $second-color;
+        margin-top: 1%;
+    }
+}
+//form style ends
+
 // contact style ends
 
 @media (max-width: 940px) {

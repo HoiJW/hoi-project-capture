@@ -27,7 +27,7 @@ nav{
     }
     li{
         list-style: none;
-        transition: 0.5s;
+        transition: 0.3s;
         padding-bottom: 1%;
         &:hover,
         &:focus{
@@ -159,6 +159,7 @@ main{
     // comment section style
     .comments{
         margin-left: 43%;
+        margin-top: 5%;
         .user-post{/* comment section */
             margin-top: 5%;
             display: flex;

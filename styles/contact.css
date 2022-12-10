@@ -262,6 +262,117 @@ button:hover {
   scale: 1.1;
 }
 
+header {
+  background-image: url(./captured-final-assets/contact-header.jpg);
+  background-size: 100%;
+  height: 70vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+nav {
+  z-index: 10;
+  padding-top: 1%;
+  padding-left: 40%;
+  padding-right: 5%;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav li {
+  list-style: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 1%;
+}
+nav li:hover, nav li:focus {
+  scale: 1.1;
+  border-bottom: 3px solid #4ceea7;
+}
+nav a {
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+  text-align: center;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+main {
+  background-color: #EFFDF3;
+}
+
+.form-section {
+  background-color: #fafafa;
+  position: relative;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  height: 100vh;
+}
+
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 10%;
+  position: absolute;
+}
+form input {
+  width: 40%;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #4ceea7;
+  padding: 2%;
+  margin: 0% 10% 5% 0%;
+  outline: none;
+}
+form textarea {
+  width: 90%;
+  background: none;
+  border: 3px solid #4ceea7;
+  padding: 2%;
+  outline: none;
+  margin-bottom: 5%;
+  resize: none;
+}
+form textarea::-webkit-input-placeholder {
+  color: #2c2c2c;
+}
+form textarea::-moz-placeholder {
+  color: #2c2c2c;
+}
+form textarea:-ms-input-placeholder {
+  color: #2c2c2c;
+}
+form textarea::-ms-input-placeholder {
+  color: #2c2c2c;
+}
+form textarea::placeholder {
+  color: #2c2c2c;
+}
+form button {
+  width: 90%;
+  margin-bottom: 8%;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  background-color: #4ceea7;
+  border: 1px solid #4ceea7;
+  margin-top: 1%;
+}
+
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 footer {

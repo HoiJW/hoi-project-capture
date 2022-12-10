@@ -296,8 +296,8 @@ nav ul {
 }
 nav li {
   list-style: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding-bottom: 1%;
 }
 nav li:hover, nav li:focus {
@@ -445,6 +445,7 @@ main .right-big p {
 }
 main .comments {
   margin-left: 43%;
+  margin-top: 5%;
 }
 main .comments .user-post { /* comment section */
   margin-top: 5%;
