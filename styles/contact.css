@@ -269,6 +269,13 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+header h1 {
+  position: absolute;
+  top: 27%;
+  right: 24%;
+  text-transform: uppercase;
+  font-size: 6rem;
+}
 
 nav {
   z-index: 10;
@@ -306,25 +313,54 @@ nav a {
 
 main {
   background-color: #EFFDF3;
+  height: 65vh;
+}
+main .wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info {
+  margin: 12% 5% 0% 5%;
+}
+.info .sns-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+}
+.info h2 {
+  text-transform: uppercase;
+}
+.info p {
+  margin: 2% 0px 2% 0px;
 }
 
 .form-section {
-  background-color: #fafafa;
   position: relative;
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
-  height: 100vh;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-left: 2%;
+  position: relative;
 }
 
 form {
+  background-color: #fafafa;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 10%;
+  padding: 5% 10% 0% 10%;
   position: absolute;
+  box-shadow: -25px 25px 0px 1px #FDFA69;
+  -webkit-box-shadow: -25px 25px 0px 1px #FDFA69;
+  -moz-box-shadow: -25px 25px 0px 1px #FDFA69;
+  top: -40%;
 }
 form input {
   width: 40%;
