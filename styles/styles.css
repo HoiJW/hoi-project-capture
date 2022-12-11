@@ -248,6 +248,7 @@ p {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 body {
@@ -263,24 +264,7 @@ button:hover {
 }
 
 header {
-  background: url(././captured-final-assets/header-image.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
-  height: 110vh;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 header .image-container {
   box-shadow: -10px -1px 0px 33px #FDFA69;
@@ -296,15 +280,16 @@ header h1 {
   font-size: 10rem;
   text-transform: uppercase;
   position: absolute;
-  top: 62%;
-  left: 30%;
+  top: 50%;
+  right: 20%;
 }
 
 nav {
+  position: absolute;
   z-index: 10;
-  padding-top: 1%;
-  padding-left: 40%;
-  padding-right: 5%;
+  width: 50%;
+  top: 0;
+  right: 0;
 }
 nav ul {
   display: -webkit-box;
@@ -393,6 +378,9 @@ input:checked ~ .menu-content {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  header {
+    background-attachment: unset;
+  }
   header .wrapper {
     height: 65vh;
   }

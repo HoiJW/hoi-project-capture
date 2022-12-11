@@ -1,17 +1,6 @@
 // header
 header{
-    background: url(././captured-final-assets/header-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        height: 110vh;
-        justify-content: start
-        
-    }
+    position: relative;
     .image-container{
         box-shadow: -10px -1px 0px 33px $first-color;
         -webkit-box-shadow: -10px -1px 0px 33px $first-color;
@@ -26,17 +15,18 @@ header{
         font-size: 10rem;
         text-transform: uppercase;
         position: absolute;
-        top: 62%;
-        left: 30%;
+        top: 50%;
+        right: 20%;
     }
 }
 // header ends
 // nav
 nav{
+    position: absolute;
     z-index: 10;
-    padding-top: 1%;
-    padding-left: 40%;
-    padding-right: 5%;
+    width: 50%;
+    top: 0;
+    right: 0;
     ul{
         display: flex;
         justify-content: space-evenly;
@@ -123,6 +113,7 @@ nav{
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     header{
+        background-attachment: unset;
         .wrapper{
             height: 65vh;
         }
