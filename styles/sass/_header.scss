@@ -113,17 +113,13 @@ nav{
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     header{
-        background-attachment: unset;
-        .wrapper{
-            height: 65vh;
-        }
         nav{ /* moblie nav shows up */
             display: none;
         }
         h1{
-            font-size: 3.5rem;
-            left: 60%;
-            top: 13%;
+            font-size: 4.5rem;
+            top: 55%;
+            right: 22%;
         }
         .image-container{
             bottom: 35%;
@@ -134,31 +130,19 @@ nav{
             -webkit-box-shadow: -10px -1px 0px 10px $first-color;
             -moz-box-shadow: -10px -1px 0px 10px $first-color;
         }
-        li{
-            transition: 0.5s;
-            padding-bottom: 1%;
-            &:hover,
-            &:focus{
-                scale: 1.1;
-                }
-        }   
+          
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     header{
-        .wrapper{
-            height: 50vh;
-        }
         h1{
-            left: 30%;
-            top: 30%;
             font-size: 2.8rem;
         }
         .image-container{
-            bottom: 58%;
-            width: 35%;
+            bottom: 8%;
+            width: 40%;
             margin: 0;
         }
     }
@@ -167,12 +151,14 @@ nav{
 /* Landscape phones and down */
 @media (max-width: 400px) {
     header{
-        .wrapper{
-            height: 40vh;
+        h1{
+            font-size: 2.5rem;
+            top: 55%;
+            right: 15%;
         }
         .image-container{
-            bottom: 65%;
-            width: 40%;
+            bottom: 5%;
+            width: 50%;
             margin: 0;
             box-shadow: -5px -1px 0px 5px $first-color;
             -webkit-box-shadow: -5px -1px 0px 5px $first-color;

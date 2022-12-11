@@ -21,6 +21,19 @@
                 <li><a href="./contact.html">contact</a></li>
             </ul>
         </nav>
+        <div class="collapsible-menu"><!-- moblie menu -->
+            <input type="checkbox" id="menu">
+            <label for="menu"><i class="fa-regular fa-square-caret-down"></i> Menu</label>
+            
+            <div class="menu-content">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </div>
+        </div><!-- moblie menu ends -->
             <h1>blog</h1>
     </header>
     <main>
@@ -30,9 +43,11 @@
                     <img src="../styles/captured-final-assets/side-blog-image.jpg" alt="catching a lens in front of the ocean">
                 </div>
                 <div class="white-container">
-                    <h2>About Capture</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolorum s, quidem  sed?<span>Find out more.</span>
-                    </p>
+                    <div class="hide-moblie">
+                        <h2>About Capture</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolorum s, quidem  sed?<span>Find out more.</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="white-container">
                     <h2>recent post</h2>
@@ -60,11 +75,6 @@
                 
             </div><!-- right side ends -->
         </div><!-- wrapper for main ends  -->
-        
-        
-        
-        
-        
         <section class="comments"><!-- reply section -->
             <h2>Comments:</h2>
             <div class="user-post"><!-- user comments -->

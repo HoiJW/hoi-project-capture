@@ -45,6 +45,62 @@ nav{
     }    
 }
 //nav ends
+//mobie nav style
+.menu-content {
+    padding: 0 0 0 50px;
+    max-height: 0;
+    overflow: hidden;
+}
+.collapsible-menu {
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 0px 15px;
+    border-bottom: 5px solid $first-color;
+    box-shadow: 2px 2px 3px $third-color;
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    z-index: 10;
+    letter-spacing: 2px;
+    label {
+        font-size: 1.7rem;
+        display: block;
+        cursor: pointer;
+        padding: 5% 5%;
+        opacity: 0.8;
+        text-align: center;
+        transition: 0.5s;
+        padding-bottom: 1%;
+        &:hover,
+        &:focus{
+        scale: 1.1;
+        }
+    }   
+    input#menu {
+        display: none;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color: $third-color;
+    text-transform: capitalize;
+    }
+}
+
+/* Toggle Effect */
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+@media(min-width:940px){
+.collapsible-menu{
+    display: none;
+}
+}
+//moblie nav style ends
 //main style
 main{
     background-color: $fifth-color;
@@ -129,12 +185,46 @@ form{
 // contact style ends
 
 @media (max-width: 940px) {
-    
+    header{
+        nav{ /* moblie nav shows up */
+            display: none;
+        }
+        h1{
+            top: 15%;
+            right: auto;
+            font-size: 4.2rem;
+        }
+    }
+    main{
+        height: auto;
+        .wrapper{
+            .info{
+                margin: 10%;
+            }
+            .form-section{
+                flex-basis: 80%;
+                form{
+                    position: unset;
+                    margin-bottom: 15%;
+                    textarea{
+                        height: 160px;
+                    }
+                }
+            }
+            
+        }
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    
+    header{
+        h1{
+            top: 35%;
+            right: auto;
+            font-size: 3rem;
+        }
+    }
 }
 
 /* Landscape phones and down */

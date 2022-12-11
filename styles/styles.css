@@ -378,19 +378,13 @@ input:checked ~ .menu-content {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  header {
-    background-attachment: unset;
-  }
-  header .wrapper {
-    height: 65vh;
-  }
   header nav { /* moblie nav shows up */
     display: none;
   }
   header h1 {
-    font-size: 3.5rem;
-    left: 60%;
-    top: 13%;
+    font-size: 4.5rem;
+    top: 55%;
+    right: 22%;
   }
   header .image-container {
     bottom: 35%;
@@ -401,39 +395,28 @@ input:checked ~ .menu-content {
     -webkit-box-shadow: -10px -1px 0px 10px #FDFA69;
     -moz-box-shadow: -10px -1px 0px 10px #FDFA69;
   }
-  header li {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    padding-bottom: 1%;
-  }
-  header li:hover, header li:focus {
-    scale: 1.1;
-  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  header .wrapper {
-    height: 50vh;
-  }
   header h1 {
-    left: 30%;
-    top: 30%;
     font-size: 2.8rem;
   }
   header .image-container {
-    bottom: 58%;
-    width: 35%;
+    bottom: 8%;
+    width: 40%;
     margin: 0;
   }
 }
 /* Landscape phones and down */
 @media (max-width: 400px) {
-  header .wrapper {
-    height: 40vh;
+  header h1 {
+    font-size: 2.5rem;
+    top: 55%;
+    right: 15%;
   }
   header .image-container {
-    bottom: 65%;
-    width: 40%;
+    bottom: 5%;
+    width: 50%;
     margin: 0;
     box-shadow: -5px -1px 0px 5px #FDFA69;
     -webkit-box-shadow: -5px -1px 0px 5px #FDFA69;

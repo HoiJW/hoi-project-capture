@@ -44,6 +44,62 @@ nav{
     }    
 }
 //nav ends
+//mobie nav style
+.menu-content {
+    padding: 0 0 0 50px;
+    max-height: 0;
+    overflow: hidden;
+}
+.collapsible-menu {
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 0px 15px;
+    border-bottom: 5px solid $first-color;
+    box-shadow: 2px 2px 3px $third-color;
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    z-index: 10;
+    letter-spacing: 2px;
+    label {
+        font-size: 1.7rem;
+        display: block;
+        cursor: pointer;
+        padding: 5% 5%;
+        opacity: 0.8;
+        text-align: center;
+        transition: 0.5s;
+        padding-bottom: 1%;
+        &:hover,
+        &:focus{
+        scale: 1.1;
+        }
+    }   
+    input#menu {
+        display: none;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color: $third-color;
+    text-transform: capitalize;
+    }
+}
+
+/* Toggle Effect */
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+@media(min-width:940px){
+.collapsible-menu{
+    display: none;
+}
+}
+//moblie nav style ends
 //main style
 main{
     background-color: $fifth-color;
@@ -116,11 +172,11 @@ main{
         .image-container{
             width: 103%;
             position: absolute;
-            top: -18%;
+            top: -15%;
             right: -6%;
-            box-shadow: -25px 25px 0px 1px $first-color;
-            -webkit-box-shadow: -25px 25px 0px 1px $first-color;
-            -moz-box-shadow: -25px 25px 0px 1px $first-color;
+            box-shadow:  -27px 25px 0px 1px $first-color;
+            -webkit-box-shadow: -27px 25px 0px 1px $first-color;
+            -moz-box-shadow: -27px 25px 0px 1px $first-color;
         }
         .text-container{
             border-left:5px solid $first-color ;
@@ -217,17 +273,120 @@ main{
 }
 //main style ends
 //blog page style ends
+//display adjustment break point
+@media(max-width:1350px) {
+    main{
+        .right-big{
+            .image-container{
+                top: -7%;
+                box-shadow:  -19px 22px 0px 1px $first-color;
+            -webkit-box-shadow: -19px 22px 0px 1px $first-color;
+            -moz-box-shadow: -19px 22px 0px 1px $first-color;
+            }
+        }
+    }
+}
 
 @media (max-width: 940px) {
-    
- }
- 
+    header{
+        h1{
+            right: 35%;
+            font-size: 4rem;
+        }
+        nav{ /* moblie nav shows up */
+            display: none;
+        }
+    }
+    main{
+        .right-big{
+            .image-container{
+                top: -5%;
+                right: -6%;
+                box-shadow: -9px 10px 0px 1px $first-color;
+                -webkit-box-shadow: -9px 10px 0px 1px $first-color;
+                -moz-box-shadow: -9px 10px 0px 1px $first-color;
+            }
+        }
+        .comments{
+            margin: 10%;
+        }
+    }
+}
  /* Landscape phone to portrait tablet */
  @media (max-width: 768px) {
-     
+    header{
+        h1{
+            font-size: 3rem;
+            }
+    }
+    main{
+        .left-small{
+            .image-container{
+                box-shadow: none;
+                left: 0;
+            }
+            .white-container{
+                width: 90%;
+                li{
+                    margin-top: 10%;
+                }
+            }
+            .hide-moblie{
+                p{
+                    display: none;
+                }
+            }
+        }
+        .right-big{
+            h3{
+                font-size: 2rem;
+            }
+            .image-container{
+                top: -1%;
+                right: -6%;
+                box-shadow: -9px 10px 0px 1px $first-color;
+                -webkit-box-shadow: -9px 10px 0px 1px $first-color;
+                -moz-box-shadow: -9px 10px 0px 1px $first-color;
+            }
+            .text-container{
+                padding-top: 62%;
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .comments{
+            .user-post{
+                .user-pic{
+                    margin-right: 3% ;
+                    width: 84px;
+                }
+                .user-comment{
+                    width: 65%;
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
  }
  
  /* Landscape phones and down */
  @media (max-width: 400px) {
-     
+     main{
+        .left-small,
+        .right-big{
+            flex-basis: 100%;
+            margin-bottom: 9%;
+        }
+        .left-small{
+            .image-container{
+                width: 90%;
+                box-shadow: 15px -15px 0px 0px $forth-color;
+                -webkit-box-shadow: 15px -15px 0px 0px $forth-color;
+                -moz-box-shadow: 15px -15px 0px 0px $forth-color;
+            }
+        }
+     }
  }

@@ -309,6 +309,63 @@ nav a {
   color: #2c2c2c;
 }
 
+.menu-content {
+  padding: 0 0 0 50px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.collapsible-menu {
+  background-color: rgba(255, 255, 255, 0.568);
+  padding: 0px 15px;
+  border-bottom: 5px solid #FDFA69;
+  -webkit-box-shadow: 2px 2px 3px #2c2c2c;
+          box-shadow: 2px 2px 3px #2c2c2c;
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  z-index: 10;
+  letter-spacing: 2px;
+}
+.collapsible-menu label {
+  font-size: 1.7rem;
+  display: block;
+  cursor: pointer;
+  padding: 5% 5%;
+  opacity: 0.8;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-bottom: 1%;
+}
+.collapsible-menu label:hover, .collapsible-menu label:focus {
+  scale: 1.1;
+}
+.collapsible-menu input#menu {
+  display: none;
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.collapsible-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #2c2c2c;
+  text-transform: capitalize;
+}
+
+/* Toggle Effect */
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+@media (min-width: 940px) {
+  .collapsible-menu {
+    display: none;
+  }
+}
 main {
   background-color: #EFFDF3;
   height: 65vh;
@@ -407,7 +464,41 @@ form button {
   margin-top: 1%;
 }
 
+@media (max-width: 940px) {
+  header nav { /* moblie nav shows up */
+    display: none;
+  }
+  header h1 {
+    top: 15%;
+    right: auto;
+    font-size: 4.2rem;
+  }
+  main {
+    height: auto;
+  }
+  main .wrapper .info {
+    margin: 10%;
+  }
+  main .wrapper .form-section {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  main .wrapper .form-section form {
+    position: unset;
+    margin-bottom: 15%;
+  }
+  main .wrapper .form-section form textarea {
+    height: 160px;
+  }
+}
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header h1 {
+    top: 35%;
+    right: auto;
+    font-size: 3rem;
+  }
+}
 /* Landscape phones and down */
 footer {
   background-color: #2c2c2c;
