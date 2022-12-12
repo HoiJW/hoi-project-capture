@@ -429,7 +429,7 @@ input:checked ~ .menu-content {
 }
 .about {
   background-color: #EFFDF3;
-  padding: 12%;
+  padding: 10%;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -442,6 +442,7 @@ input:checked ~ .menu-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0% 15% 0% 15%;
 }
 .about h2 {
   text-align: center;
@@ -531,7 +532,7 @@ input:checked ~ .menu-content {
 
 .mid-menu {
   background-color: #EFFDF3;
-  height: 90vh;
+  height: 65vh;
   padding-top: 10%;
 }
 .mid-menu .wrapper {
@@ -678,7 +679,7 @@ input:checked ~ .menu-content {
 }
 
 .features {
-  height: 60vh;
+  height: 45vh;
   background-color: #EFFDF3;
   padding-top: 5%;
 }
