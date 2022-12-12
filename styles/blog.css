@@ -432,6 +432,7 @@ main .left-small ul {
 }
 main .left-small li {
   font-family: "Roboto", sans-serif;
+  margin-bottom: 3%;
 }
 main .left-small ul li::before {
   content: "•";
