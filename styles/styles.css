@@ -429,7 +429,6 @@ input:checked ~ .menu-content {
 }
 .about {
   background-color: #EFFDF3;
-  height: 75vh;
   padding: 12%;
 }
 .about .wrapper {
@@ -470,7 +469,7 @@ input:checked ~ .menu-content {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  height: 100vh;
+  height: 75vh;
   /* text wrapper */
 }
 .blog .imagine-contanier,
