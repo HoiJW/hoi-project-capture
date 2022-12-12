@@ -469,9 +469,9 @@ main .right-big .image-container {
   position: absolute;
   top: -15%;
   right: -6%;
-  box-shadow: -27px 25px 0px 1px #FDFA69;
-  -webkit-box-shadow: -27px 25px 0px 1px #FDFA69;
-  -moz-box-shadow: -27px 25px 0px 1px #FDFA69;
+  box-shadow: -30px 27px 0px 1px #FDFA69;
+  -webkit-box-shadow: -30px 27px 0px 1px #FDFA69;
+  -moz-box-shadow: -30px 27px 0px 1px #FDFA69;
 }
 main .right-big .text-container {
   border-left: 5px solid #FDFA69;
