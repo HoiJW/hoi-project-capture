@@ -1,5 +1,6 @@
 //select the form that i need 
 const formEl = document.querySelector('form');
+
 // add eventlisteer to the from (when user sumbit it )
 formEl.addEventListener('submit', function(event){
     event.preventDefault();
@@ -16,11 +17,21 @@ formEl.addEventListener('submit', function(event){
     //image div
     const userPics = document.createElement('div');
     userPics.classList.add('user-pic');
-    userPics.innerHTML = `<img src="../styles/captured-final-assets/comment-2.jpg" alt="user:${userName}">`;//plug in user-pic div
+    //add a varible for placeholder image numbers of last digit on url
+    let a = Math.floor(Math.random() * 16)+75;
+    userPics.innerHTML = `<img src="https://placedog.net/${a}/80" alt="user:${userName}">`;//plug in user-pic div
+    
+    //set locale posting time
+    const date = {  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+    const currentDate = new Date().toLocaleTimeString('en-us', date);
+
+
+
+
     //comment div
     const userCommetContanier = document.createElement('div');
     userCommetContanier.classList.add('user-comment');
-    const userInfo =`<p class="comment-date">Wednesday October 10th, 2022 by ${userName}</p>
+    const userInfo =`<p class="comment-date">${currentDate} by ${userName}</p>
     <p>${userComment}</p>`;
     userCommetContanier.innerHTML = userInfo;//plug in comment div into user-comment div
 
