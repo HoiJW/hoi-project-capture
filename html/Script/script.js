@@ -16,7 +16,7 @@ formEl.addEventListener('submit', function(event){
     //image div
     const userPics = document.createElement('div');
     userPics.classList.add('user-pic');
-    userPics.innerHTML = `<img src="../styles/captured-final-assets/comment-2.jpg" alt="user:Julia">`;//plug in user-pic div
+    userPics.innerHTML = `<img src="../styles/captured-final-assets/comment-2.jpg" alt="user:${userName}">`;//plug in user-pic div
     //comment div
     const userCommetContanier = document.createElement('div');
     userCommetContanier.classList.add('user-comment');
