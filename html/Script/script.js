@@ -23,7 +23,7 @@ formEl.addEventListener('submit', function(event){
     
     //set locale posting time
     const date = {  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-    const currentDate = new Date().toLocaleTimeString('en-us', date);
+    const currentDate = new Date().toLocaleDateString(undefined, date);
 
 
 
