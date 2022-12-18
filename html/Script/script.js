@@ -43,7 +43,8 @@ formEl.addEventListener('submit', function(event){
     const commentSection = document.querySelector('.user-value');
     commentSection.appendChild(newCommentDiv);
 
-
+    //let user knows the commet has been sent out
+    alert("You've replayed to this lovely blog 💖");
 
     formEl.reset()
 });
